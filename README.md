@@ -8,7 +8,7 @@
 <br>
 
 <div align="center">
-  <img src="https://github.com/Emanuelgm98/aura-private-operations/raw/refs/heads/main/assets/branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="88">
+  <img src="./branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="72">
   <br>
   <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel Gonzalez Michea</strong></sub>
 </div>
@@ -21,20 +21,19 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-dev.yml">
-    <img alt="CI dev" src="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-dev.yml/badge.svg?branch=develop">
-  </a>
-  <a href="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-prod.yml">
-    <img alt="CI prod" src="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-prod.yml/badge.svg?branch=main">
-  </a>
-  <img alt="Terraform" src="https://img.shields.io/badge/terraform-1.17-7B42BC?logo=terraform&logoColor=white">
-  <img alt="Backend tests" src="https://img.shields.io/badge/backend_tests-47%2F47-2ea44f">
-  <img alt="Checkov" src="https://img.shields.io/badge/checkov-338%2F338-2ea44f">
-  <img alt="License" src="https://img.shields.io/badge/license-propietaria-2ea44f">
+  <a href="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-dev.yml"><img alt="CI dev" src="https://img.shields.io/github/actions/workflow/status/Emanuelgm98/aura-private-operations/ci-cd-dev.yml?branch=develop&label=CI%20dev"></a>
+  <a href="https://github.com/Emanuelgm98/aura-private-operations/actions/workflows/ci-cd-prod.yml"><img alt="CI prod" src="https://img.shields.io/github/actions/workflow/status/Emanuelgm98/aura-private-operations/ci-cd-prod.yml?branch=main&label=CI%20prod"></a>
+  <img alt="Terraform 1.17" src="https://img.shields.io/badge/Terraform-1.17-7B42BC?logo=terraform&logoColor=white">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Emanuelgm98/aura-private-operations/raw/refs/heads/main/assets/branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel Gonzalez Michea" width="240">
+  <img alt="Backend tests 47/47" src="https://img.shields.io/badge/Backend%20tests-47%2F47-2ea44f">
+  <img alt="Checkov 338/338" src="https://img.shields.io/badge/Checkov-338%2F338-2ea44f">
+  <img alt="License proprietary" src="https://img.shields.io/badge/License-proprietary-2ea44f">
+</p>
+
+<p align="center">
+  <img src="./branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel Gonzalez Michea" width="160">
 </p>
 
 > **Estado:** scaffold GitOps completo, validado localmente y listo para bootstrap.
@@ -53,7 +52,7 @@ ledger append-only, identidad con MFA y un pipeline que no permite cambios fuera
 
 La presentación del producto está en [aura-presentation](https://emanuelgm98.github.io/aura-presentation/):
 explica el problema, las capacidades y el modelo de seguridad sin exponer la consola operativa.
-El código fuente vive en [`apps/frontend/app/presentacion`](apps/frontend/app/presentacion).
+El código fuente vive en [`apps/frontend/app/presentacion`](https://github.com/Emanuelgm98/aura-private-operations/tree/main/apps/frontend/app/presentacion).
 
 Para verla en local:
 
@@ -141,7 +140,7 @@ flowchart TB
   TF -->|provisiona| Edge
 ```
 
-Detalle completo en [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
+Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/ARCHITECTURE.md).
 
 ## Flujo GitOps
 
@@ -314,17 +313,17 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
 
 | Documento | Contenido |
 | --- | --- |
-| [Arquitectura](docs/ARCHITECTURE.md) | Componentes, redes, identidad y decisiones. |
-| [Runbook](docs/RUNBOOK.md) | Operación, despliegues, incidentes y rollback. |
-| [Disaster Recovery](docs/DISASTER-RECOVERY.md) | RPO/RTO, backups y recuperación. |
-| [Privacidad](docs/PRIVACY.md) | Datos tratados, retención y minimización. |
-| [Seguridad](docs/SECURITY.md) | Controles, modelo de amenazas y respuesta. |
-| [Costos](docs/COSTS.md) | Estimación por entorno y palancas de ahorro. |
+| [Arquitectura](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/ARCHITECTURE.md) | Componentes, redes, identidad y decisiones. |
+| [Runbook](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/RUNBOOK.md) | Operación, despliegues, incidentes y rollback. |
+| [Disaster Recovery](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/DISASTER-RECOVERY.md) | RPO/RTO, backups y recuperación. |
+| [Privacidad](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/PRIVACY.md) | Datos tratados, retención y minimización. |
+| [Seguridad](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/SECURITY.md) | Controles, modelo de amenazas y respuesta. |
+| [Costos](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/COSTS.md) | Estimación por entorno y palancas de ahorro. |
 
 ---
 
 <div align="center">
-  <img src="https://github.com/Emanuelgm98/aura-private-operations/raw/refs/heads/main/assets/branding/griffin-emblem.png" alt="Griffin - GRIFFIN CLI" width="64">
+  <img src="./branding/griffin-emblem.png" alt="Griffin - GRIFFIN CLI" width="52">
   <br>
   <sub><strong>GRIFFIN CLI</strong> · <em>Diseñado para operar, no para improvisar.</em></sub><br>
   <sub>Emanuel Gonzalez Michea · Autor y auditor</sub>
