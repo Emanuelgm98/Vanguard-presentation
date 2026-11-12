@@ -13,10 +13,10 @@
   <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel G. Michea</strong></sub>
 </div>
 
-<h1 align="center">AURA PRIVATE OPERATIONS</h1>
+<h1 align="center">VANGUARD PRIVATE OPERATIONS</h1>
 
 <p align="center">
-  Plataforma privada de operaciones y liquidación de comisiones para AURA.<br>
+  Plataforma privada de operaciones y liquidación de comisiones para Vanguard.<br>
   Infraestructura como código, entrega GitOps y seguridad por defecto.
 </p>
 
@@ -44,7 +44,7 @@
 
 ## En una frase
 
-AURA PRIVATE OPERATIONS convierte la operación de comisiones en un sistema auditable:
+VANGUARD PRIVATE OPERATIONS convierte la operación de comisiones en un sistema auditable:
 frontend estático privado, API serverless en VPC, PostgreSQL con precisión decimal,
 ledger append-only, identidad con MFA y un pipeline que no permite cambios fuera de Git.
 
@@ -89,7 +89,7 @@ cd apps/frontend && npm run dev
 
 ## Arquitectura
 
-![Diagrama de arquitectura AWS de AURA — versión adaptable a móviles](./architecture-mobile.svg)
+![Diagrama de arquitectura AWS de Vanguard — versión adaptable a móviles](./architecture-mobile.svg)
 
 Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/ARCHITECTURE.md).
 
@@ -157,7 +157,7 @@ sequenceDiagram
 apps/
   frontend/                 Next.js 15 static export + OAuth2 PKCE
   backend/                  Lambda Node.js 22 (router, ledger, migrador)
-assets/branding/            Banner AURA, emblema grifón y sello verificado
+assets/branding/            Banner Vanguard, emblema grifón y sello verificado
 infrastructure/terraform/
   bootstrap/                S3+KMS estado, DynamoDB lock, OIDC GitHub, roles/boundary
   modules/                  network, database, identity, api, frontend, observability
@@ -283,6 +283,6 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
 <br>
 
 <div align="center">
-  <sub>Propiedad de AURA. Uso interno. Sin licencia de redistribución.</sub><br>
-  <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G. Michea</sub>
+  <sub>Propiedad de Vanguard. Uso interno. Sin licencia de redistribución.</sub><br>
+  <sub>© VANGUARD PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G. Michea</sub>
 </div>
