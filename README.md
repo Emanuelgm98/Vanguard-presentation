@@ -1,4 +1,4 @@
-
+ <br>
 
 <div align="center">
   <a href="https://emanuelgm98.github.io/aura-presentation/"><strong>Ver presentación en vivo</strong></a>
@@ -6,7 +6,11 @@
 
 <br>
 
-
+<div align="center">
+  <img src="./assets/branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="88">
+  <br>
+  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel Gonzalez Michea</strong></sub>
+</div>
 
 <h1 align="center">AURA PRIVATE OPERATIONS</h1>
 
@@ -29,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel Gonzalez Michea" width="240">
+  <img src="./assets/branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel Gonzalez Michea" width="240">
 </p>
 
 > **Estado:** scaffold GitOps completo, validado localmente y listo para bootstrap.
@@ -319,7 +323,7 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
 ---
 
 <div align="center">
-  <img src="assets/branding/griffin-emblem.png" alt="Griffin - GRIFFIN CLI" width="64">
+  <img src="./assets/branding/griffin-emblem.png" alt="Griffin - GRIFFIN CLI" width="64">
   <br>
   <sub><strong>GRIFFIN CLI</strong> · <em>Diseñado para operar, no para improvisar.</em></sub><br>
   <sub>Emanuel Gonzalez Michea · Autor y auditor</sub>
