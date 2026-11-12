@@ -89,56 +89,7 @@ cd apps/frontend && npm run dev
 
 ## Arquitectura
 
-```mermaid
-flowchart TB
-  subgraph Edge["Borde"]
-    U[Operador AURA]
-    R53[Route 53 opcional]
-    CF[CloudFront + AWS WAF]
-    S3[(S3 privado<br/>Next.js export)]
-    U -->|HTTPS + MFA| R53
-    R53 --> CF
-    CF -->|OAC| S3
-  end
-
-  subgraph Identity["Identidad"]
-    COG[Cognito User Pool<br/>MFA ON + PKCE]
-  end
-
-  subgraph App["Aplicación"]
-    APIGW[API Gateway HTTP API]
-    L[Lambda API<br/>VPC + concurrencia reservada]
-    MIG[Lambda migradora<br/>forward-only]
-  end
-
-  subgraph Data["Datos"]
-    RDS[(RDS PostgreSQL<br/>NUMERIC 18,6)]
-    DDB[(DynamoDB<br/>idempotencia TTL)]
-    SM[Secrets Manager]
-  end
-
-  subgraph Ops["Operación"]
-    CW[CloudWatch + alarmas]
-    GHA[GitHub Actions<br/>OIDC]
-    TF[Terraform]
-    N8N[n8n ops]
-  end
-
-  U -->|OAuth2 PKCE| COG
-  U -->|Bearer JWT| APIGW
-  APIGW -->|JWT authorizer| COG
-  APIGW --> L
-  L -->|SQL| RDS
-  L -->|idempotencia| DDB
-  L -->|GetSecretValue| SM
-  L -->|logs y métricas| CW
-  MIG -->|migraciones| RDS
-  N8N -->|POST /commissions| APIGW
-  GHA -->|plan / apply| TF
-  TF -->|provisiona| App
-  TF -->|provisiona| Data
-  TF -->|provisiona| Edge
-```
+![Diagrama de arquitectura AWS de AURA — versión adaptable a móviles](./architecture-mobile.svg)
 
 Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/ARCHITECTURE.md).
 
