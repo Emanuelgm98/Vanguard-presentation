@@ -6,11 +6,7 @@
 
 <br>
 
-<div align="center">
-  <img src="assets/branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="88">
-  <br>
-  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel Gonzalez Michea</strong></sub>
-</div>
+
 
 <h1 align="center">AURA PRIVATE OPERATIONS</h1>
 
