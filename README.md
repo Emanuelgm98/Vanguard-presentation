@@ -50,7 +50,7 @@ ledger append-only, identidad con MFA y un pipeline que no permite cambios fuera
 
 ## Presentación
 
-La presentación del producto está en [aura-presentation](https://emanuelgm98.github.io/aura-presentation/):
+La presentación del producto está en [Vanguard presentation](https://emanuelgm98.github.io/aura-presentation/):
 explica el problema, las capacidades y el modelo de seguridad sin exponer la consola operativa.
 El código fuente vive en [`apps/frontend/app/presentacion`](https://github.com/Emanuelgm98/aura-private-operations/tree/main/apps/frontend/app/presentacion).
 
@@ -226,7 +226,7 @@ desde runners de GitHub. Las migraciones son inmutables y solo hacia adelante.
 | Superficie | Comando | Resultado |
 | --- | --- | --- |
 | Backend | `npm test` | 47/47 tests |
-| Backend build | `npm run build` | `dist/aura-backend.zip` |
+| Backend build | `npm run build` | `dist/vanguard-backend.zip` |
 | Frontend | `npm run lint && npm run typecheck && npm run build` | OK |
 | Terraform | `terraform fmt -check -recursive` | OK |
 | Terraform dev | `terraform validate` | OK |
