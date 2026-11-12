@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1420" viewBox="0 0 900 1420" role="img" aria-labelledby="title desc">
-<title id="title">Arquitectura AWS de AURA Private Operations</title>
+<title id="title">Arquitectura AWS de VANGUARD Private Operations</title>
 <desc id="desc">Diagrama vertical adaptable a móviles: borde, identidad, aplicación, datos y operación.</desc>
 <defs>
   <style>
-    text{font-family:Arial,Helvetica,sans-serif;fill:#e8eef8}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#f0eee7}
     .heading{font-size:27px;font-weight:700;letter-spacing:1px}
-    .node{fill:#18283b;stroke:#54708e;stroke-width:2}
-    .main{fill:#132f43;stroke:#58a6d8;stroke-width:2.5}
+    .node{fill:#203751;stroke:#6f5c32;stroke-width:2}
+    .main{fill:#14283c;stroke:#d6a73b;stroke-width:2.5}
     .label{font-size:24px;font-weight:700}
-    .sub{font-size:18px;fill:#b9c9da}
-    .section{fill:#101b2a;stroke:#344b64;stroke-width:2}
-    .section-title{font-size:22px;font-weight:700;fill:#8ecbff}
-    .arrow{fill:none;stroke:#82b9e6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-    .arrow-label{font-size:17px;fill:#9eb4c9}
+    .sub{font-size:18px;fill:#d5deeb}
+    .section{fill:#0d1a2d;stroke:#4e5a6c;stroke-width:2}
+    .section-title{font-size:22px;font-weight:700;fill:#f4d58a}
+    .arrow{fill:none;stroke:#d6a73b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .arrow-label{font-size:17px;fill:#c6b58e}
   </style>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#82b9e6"/></marker>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d6a73b"/></marker>
 </defs>
-<rect width="900" height="1420" rx="28" fill="#0b1220"/>
-<text x="450" y="52" text-anchor="middle" class="heading">AURA PRIVATE OPERATIONS</text>
+<rect width="900" height="1420" rx="28" fill="#080f1b"/>
+<text x="450" y="52" text-anchor="middle" class="heading">VANGUARD PRIVATE OPERATIONS</text>
 <text x="450" y="84" text-anchor="middle" class="sub">Arquitectura AWS · vista vertical para móviles</text>
 
 <rect x="48" y="112" width="804" height="238" rx="20" class="section"/>
