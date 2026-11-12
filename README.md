@@ -10,7 +10,7 @@
 <div align="center">
   <img src="./branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="72">
   <br>
-  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel Gonzalez Michea</strong></sub>
+  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel G. Michea</strong></sub>
 </div>
 
 <h1 align="center">AURA PRIVATE OPERATIONS</h1>
@@ -284,5 +284,5 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
 
 <div align="center">
   <sub>Propiedad de AURA. Uso interno. Sin licencia de redistribución.</sub><br>
-  <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel Gonzalez Michea</sub>
+  <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G. Michea</sub>
 </div>
