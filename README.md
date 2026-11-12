@@ -1,6 +1,3 @@
-# AURA Private Operations — Presentación
-
-Preview estático de la presentación de AURA Private Operations.
 
 <br>
 
@@ -337,11 +334,6 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
 
 <div align="center">
   <sub>Propiedad de AURA. Uso interno. Sin licencia de redistribución.</sub><br>
-  <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G. Michea</sub>
+  <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel Gonzalez Michea</sub>
 </div>
-
-
-- Página: https://emanuelgm98.github.io/aura-presentation/
-- Repositorio privado: https://github.com/Emanuelgm98/aura-private-operations
-
 
