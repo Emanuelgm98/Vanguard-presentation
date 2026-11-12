@@ -1,5 +1,4 @@
 
-<br>
 
 <div align="center">
   <a href="https://emanuelgm98.github.io/aura-presentation/"><strong>Ver presentación en vivo</strong></a>
