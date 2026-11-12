@@ -2,7 +2,7 @@
 <br>
 
 <div align="center">
-  <a href="https://emanuelgm98.github.io/aura-presentation/"><strong>Ver presentación en vivo</strong></a>
+  <a href="https://emanuelgm98.github.io/Vanguard-presentation/"><strong>Ver presentación en vivo</strong></a>
 </div>
 
 <br>
@@ -50,7 +50,7 @@ ledger append-only, identidad con MFA y un pipeline que no permite cambios fuera
 
 ## Presentación
 
-La presentación del producto está en [Vanguard presentation](https://emanuelgm98.github.io/aura-presentation/):
+La presentación del producto está en [Vanguard presentation](https://emanuelgm98.github.io/Vanguard-presentation/):
 explica el problema, las capacidades y el modelo de seguridad sin exponer la consola operativa.
 El código fuente vive en [`apps/frontend/app/presentacion`](https://github.com/Emanuelgm98/aura-private-operations/tree/main/apps/frontend/app/presentacion).
 
