@@ -336,4 +336,3 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
   <sub>Propiedad de AURA. Uso interno. Sin licencia de redistribución.</sub><br>
   <sub>© AURA PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel Gonzalez Michea</sub>
 </div>
-
