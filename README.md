@@ -89,7 +89,7 @@ cd apps/frontend && npm run dev
 
 ## Arquitectura
 
-![Diagrama de arquitectura AWS de Vanguard — versión adaptable a móviles](./architecture-mobile.svg)
+![Diagrama de arquitectura AWS de VANGUARD Private Operations](https://emanuelgm98.github.io/Vanguard-presentation/architecture-mobile.svg?v=2)
 
 Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura-private-operations/blob/main/docs/ARCHITECTURE.md).
 
