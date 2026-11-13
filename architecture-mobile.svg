@@ -1,72 +1,88 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1420" viewBox="0 0 900 1420" role="img" aria-labelledby="title desc">
-<title id="title">Arquitectura AWS de VANGUARD Private Operations</title>
-<desc id="desc">Diagrama vertical adaptable a móviles: borde, identidad, aplicación, datos y operación.</desc>
+<title id="title">VANGUARD Private Operations — AWS Architecture</title>
+<desc id="desc">Enterprise architecture diagram showing web delivery, identity, application APIs, data services, and operations on AWS.</desc>
 <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1422"/><stop offset="1" stop-color="#101E2E"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B89558"/><stop offset="1" stop-color="#D9C08B"/></linearGradient>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#020811" flood-opacity=".32"/></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C5A66A"/></marker>
   <style>
-    text{font-family:Arial,Helvetica,sans-serif;fill:#f0eee7}
-    .heading{font-size:27px;font-weight:700;letter-spacing:1px}
-    .node{fill:#203751;stroke:#6f5c32;stroke-width:2}
-    .main{fill:#14283c;stroke:#d6a73b;stroke-width:2.5}
-    .label{font-size:24px;font-weight:700}
-    .sub{font-size:18px;fill:#d5deeb}
-    .section{fill:#0d1a2d;stroke:#4e5a6c;stroke-width:2}
-    .section-title{font-size:22px;font-weight:700;fill:#f4d58a}
-    .arrow{fill:none;stroke:#d6a73b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-    .arrow-label{font-size:17px;fill:#c6b58e}
+    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#E8EDF2}
+    .brand{font-size:29px;font-weight:750;letter-spacing:2.4px}
+    .subtitle{font-size:17px;fill:#91A1B3;letter-spacing:.5px}
+    .section{fill:#111F30;stroke:#2B4056;stroke-width:1.5}
+    .section-title{font-size:18px;font-weight:700;letter-spacing:1.25px;fill:#D8C18E}
+    .node{fill:#1A2D42;stroke:#3A5068;stroke-width:1.5}
+    .primary{fill:#1A2D42;stroke:#C5A66A;stroke-width:2}
+    .label{font-size:22px;font-weight:700;fill:#F0F3F6}
+    .sub{font-size:16px;fill:#AAB8C7}
+    .arrow{fill:none;stroke:#C5A66A;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+    .note{font-size:15px;fill:#91A1B3}
+    .number{font-size:13px;font-weight:800;fill:#101C2B}
   </style>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#d6a73b"/></marker>
 </defs>
-<rect width="900" height="1420" rx="28" fill="#080f1b"/>
-<text x="450" y="52" text-anchor="middle" class="heading">VANGUARD PRIVATE OPERATIONS</text>
-<text x="450" y="84" text-anchor="middle" class="sub">Arquitectura AWS · vista vertical para móviles</text>
+<rect width="900" height="1420" rx="28" fill="url(#bg)"/>
+<rect x="48" y="34" width="54" height="3" rx="2" fill="url(#gold)"/>
+<text x="450" y="61" text-anchor="middle" class="brand">VANGUARD PRIVATE OPERATIONS</text>
+<text x="450" y="91" text-anchor="middle" class="subtitle">AWS CLOUD ARCHITECTURE  /  SECURITY BY DESIGN</text>
 
-<rect x="48" y="112" width="804" height="238" rx="20" class="section"/>
-<text x="78" y="150" class="section-title">01 · BORDE Y ENTREGA WEB</text>
-<rect x="78" y="178" width="205" height="112" rx="14" class="node"/>
-<text x="180" y="222" text-anchor="middle" class="label">Operador</text><text x="180" y="253" text-anchor="middle" class="sub">HTTPS</text>
-<rect x="347" y="178" width="205" height="112" rx="14" class="main"/>
-<text x="450" y="218" text-anchor="middle" class="label">CloudFront</text><text x="450" y="249" text-anchor="middle" class="sub">AWS WAF</text>
-<rect x="616" y="178" width="205" height="112" rx="14" class="node"/>
-<text x="718" y="218" text-anchor="middle" class="label">S3 privado</text><text x="718" y="249" text-anchor="middle" class="sub">Next.js · OAC</text>
-<path d="M283 234 H340" class="arrow" marker-end="url(#arrow)"/><path d="M552 234 H609" class="arrow" marker-end="url(#arrow)"/>
-<text x="450" y="324" text-anchor="middle" class="arrow-label">Route 53 opcional · distribución HTTPS</text>
+<!-- 01 Edge -->
+<rect x="48" y="116" width="804" height="234" rx="18" class="section"/>
+<circle cx="78" cy="151" r="13" fill="url(#gold)"/><text x="78" y="156" text-anchor="middle" class="number">01</text>
+<text x="102" y="157" class="section-title">EDGE &amp; WEB DELIVERY</text>
+<rect x="78" y="184" width="205" height="106" rx="12" class="node" filter="url(#shadow)"/>
+<text x="180" y="226" text-anchor="middle" class="label">Operator</text><text x="180" y="255" text-anchor="middle" class="sub">HTTPS</text>
+<rect x="347" y="184" width="205" height="106" rx="12" class="primary" filter="url(#shadow)"/>
+<text x="450" y="226" text-anchor="middle" class="label">CloudFront</text><text x="450" y="255" text-anchor="middle" class="sub">AWS WAF</text>
+<rect x="616" y="184" width="205" height="106" rx="12" class="node" filter="url(#shadow)"/>
+<text x="718" y="226" text-anchor="middle" class="label">Private S3</text><text x="718" y="255" text-anchor="middle" class="sub">Next.js · OAC</text>
+<path d="M283 237 H340 M552 237 H609" class="arrow" marker-end="url(#arrow)"/>
+<text x="450" y="326" text-anchor="middle" class="note">Optional Route 53  ·  Encrypted content delivery</text>
 
-<path d="M450 350 V390" class="arrow" marker-end="url(#arrow)"/>
-<rect x="48" y="398" width="804" height="150" rx="20" class="section"/>
-<text x="78" y="436" class="section-title">02 · IDENTIDAD</text>
-<rect x="200" y="458" width="500" height="66" rx="14" class="main"/>
-<text x="450" y="486" text-anchor="middle" class="label">Amazon Cognito User Pool</text>
-<text x="450" y="512" text-anchor="middle" class="sub">MFA obligatorio · OAuth2 / PKCE</text>
+<path d="M450 350 V389" class="arrow" marker-end="url(#arrow)"/>
+<!-- 02 Identity -->
+<rect x="48" y="398" width="804" height="150" rx="18" class="section"/>
+<circle cx="78" cy="433" r="13" fill="url(#gold)"/><text x="78" y="438" text-anchor="middle" class="number">02</text>
+<text x="102" y="439" class="section-title">IDENTITY &amp; ACCESS</text>
+<rect x="200" y="460" width="500" height="65" rx="12" class="primary" filter="url(#shadow)"/>
+<text x="450" y="487" text-anchor="middle" class="label">Amazon Cognito User Pool</text>
+<text x="450" y="512" text-anchor="middle" class="sub">Mandatory MFA  ·  OAuth 2.0 / PKCE</text>
 
-<path d="M450 548 V588" class="arrow" marker-end="url(#arrow)"/>
-<rect x="48" y="596" width="804" height="212" rx="20" class="section"/>
-<text x="78" y="634" class="section-title">03 · API Y APLICACIÓN</text>
-<rect x="90" y="658" width="320" height="112" rx="14" class="main"/>
-<text x="250" y="701" text-anchor="middle" class="label">API Gateway</text><text x="250" y="732" text-anchor="middle" class="sub">HTTP API · JWT authorizer</text>
-<rect x="490" y="658" width="320" height="112" rx="14" class="node"/>
-<text x="650" y="701" text-anchor="middle" class="label">Lambda API</text><text x="650" y="732" text-anchor="middle" class="sub">VPC · concurrencia reservada</text>
+<path d="M450 548 V587" class="arrow" marker-end="url(#arrow)"/>
+<!-- 03 Application -->
+<rect x="48" y="596" width="804" height="212" rx="18" class="section"/>
+<circle cx="78" cy="631" r="13" fill="url(#gold)"/><text x="78" y="636" text-anchor="middle" class="number">03</text>
+<text x="102" y="637" class="section-title">APPLICATION &amp; API LAYER</text>
+<rect x="90" y="660" width="320" height="108" rx="12" class="primary" filter="url(#shadow)"/>
+<text x="250" y="703" text-anchor="middle" class="label">API Gateway</text><text x="250" y="733" text-anchor="middle" class="sub">HTTP API · JWT authorizer</text>
+<rect x="490" y="660" width="320" height="108" rx="12" class="node" filter="url(#shadow)"/>
+<text x="650" y="703" text-anchor="middle" class="label">AWS Lambda</text><text x="650" y="733" text-anchor="middle" class="sub">VPC · reserved concurrency</text>
 <path d="M410 714 H483" class="arrow" marker-end="url(#arrow)"/>
-<text x="450" y="790" text-anchor="middle" class="arrow-label">Lambda migradora · migraciones forward-only</text>
+<text x="450" y="792" text-anchor="middle" class="note">Dedicated migration function  ·  Forward-only migrations</text>
 
-<path d="M450 808 V848" class="arrow" marker-end="url(#arrow)"/>
-<rect x="48" y="856" width="804" height="214" rx="20" class="section"/>
-<text x="78" y="894" class="section-title">04 · DATOS Y SECRETOS</text>
-<rect x="78" y="918" width="224" height="112" rx="14" class="node"/>
-<text x="190" y="960" text-anchor="middle" class="label">RDS PostgreSQL</text><text x="190" y="991" text-anchor="middle" class="sub">NUMERIC(18,6)</text>
-<rect x="338" y="918" width="224" height="112" rx="14" class="node"/>
-<text x="450" y="960" text-anchor="middle" class="label">DynamoDB</text><text x="450" y="991" text-anchor="middle" class="sub">Idempotencia · TTL</text>
-<rect x="598" y="918" width="224" height="112" rx="14" class="node"/>
-<text x="710" y="960" text-anchor="middle" class="label">Secrets Manager</text><text x="710" y="991" text-anchor="middle" class="sub">Secretos de aplicación</text>
+<path d="M450 808 V847" class="arrow" marker-end="url(#arrow)"/>
+<!-- 04 Data -->
+<rect x="48" y="856" width="804" height="214" rx="18" class="section"/>
+<circle cx="78" cy="891" r="13" fill="url(#gold)"/><text x="78" y="896" text-anchor="middle" class="number">04</text>
+<text x="102" y="897" class="section-title">DATA &amp; SECRETS</text>
+<rect x="78" y="920" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
+<text x="190" y="962" text-anchor="middle" class="label">RDS PostgreSQL</text><text x="190" y="991" text-anchor="middle" class="sub">NUMERIC(18,6)</text>
+<rect x="338" y="920" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
+<text x="450" y="962" text-anchor="middle" class="label">DynamoDB</text><text x="450" y="991" text-anchor="middle" class="sub">Idempotency · TTL</text>
+<rect x="598" y="920" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
+<text x="710" y="962" text-anchor="middle" class="label">Secrets Manager</text><text x="710" y="991" text-anchor="middle" class="sub">Application secrets</text>
 
-<path d="M450 1070 V1110" class="arrow" marker-end="url(#arrow)"/>
-<rect x="48" y="1118" width="804" height="252" rx="20" class="section"/>
-<text x="78" y="1156" class="section-title">05 · OPERACIÓN Y OBSERVABILIDAD</text>
-<rect x="78" y="1180" width="224" height="112" rx="14" class="node"/>
-<text x="190" y="1222" text-anchor="middle" class="label">CloudWatch</text><text x="190" y="1253" text-anchor="middle" class="sub">Logs · métricas · alarmas</text>
-<rect x="338" y="1180" width="224" height="112" rx="14" class="main"/>
-<text x="450" y="1222" text-anchor="middle" class="label">GitHub Actions</text><text x="450" y="1253" text-anchor="middle" class="sub">OIDC · CI/CD</text>
-<rect x="598" y="1180" width="224" height="112" rx="14" class="node"/>
-<text x="710" y="1222" text-anchor="middle" class="label">Terraform</text><text x="710" y="1253" text-anchor="middle" class="sub">Plan · apply aprobado</text>
-<path d="M562 1236 H591" class="arrow" marker-end="url(#arrow)"/>
-<text x="450" y="1338" text-anchor="middle" class="arrow-label">n8n ops → POST /commissions → API Gateway</text>
+<path d="M450 1070 V1109" class="arrow" marker-end="url(#arrow)"/>
+<!-- 05 Operations -->
+<rect x="48" y="1118" width="804" height="252" rx="18" class="section"/>
+<circle cx="78" cy="1153" r="13" fill="url(#gold)"/><text x="78" y="1158" text-anchor="middle" class="number">05</text>
+<text x="102" y="1159" class="section-title">OPERATIONS &amp; OBSERVABILITY</text>
+<rect x="78" y="1182" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
+<text x="190" y="1224" text-anchor="middle" class="label">CloudWatch</text><text x="190" y="1253" text-anchor="middle" class="sub">Logs · metrics · alarms</text>
+<rect x="338" y="1182" width="224" height="110" rx="12" class="primary" filter="url(#shadow)"/>
+<text x="450" y="1224" text-anchor="middle" class="label">GitHub Actions</text><text x="450" y="1253" text-anchor="middle" class="sub">OIDC · CI/CD</text>
+<rect x="598" y="1182" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
+<text x="710" y="1224" text-anchor="middle" class="label">Terraform</text><text x="710" y="1253" text-anchor="middle" class="sub">Plan · approved apply</text>
+<path d="M562 1237 H591" class="arrow" marker-end="url(#arrow)"/>
+<text x="450" y="1338" text-anchor="middle" class="note">n8n operations  →  POST /commissions  →  API Gateway</text>
 </svg>
