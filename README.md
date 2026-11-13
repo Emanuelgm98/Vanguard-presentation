@@ -98,28 +98,37 @@ Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura
 ## Flujo GitOps
 
 ```mermaid
-sequenceDiagram
-  autonumber
-  participant Dev as Operador
-  participant GH as GitHub
-  participant CI as Actions + OIDC
-  participant AWS as AWS dev/prod
-  participant TF as Estado Terraform
+flowchart TD
+    A["Desarrollador"] --> B["GitHub · push / pull request"]
+    B --> C["GitHub Actions"]
+    C --> D["Quality · Tests · Build"]
+    D --> E["Checkov · Trivy · Gitleaks"]
+    E --> F["OIDC · credenciales temporales"]
+    F --> G["Terraform Plan · State Lock + KMS"]
+    G --> H{"¿Rama?"}
 
-  Dev->>GH: push a develop o PR a main
-  GH->>CI: ejecuta quality + validate + security
-  CI->>CI: tests, builds, Checkov, Trivy, Gitleaks
-  CI->>AWS: AssumeRoleWithWebIdentity
-  AWS-->>CI: credenciales temporales
-  CI->>TF: plan con lock y cifrado KMS
-  alt develop
-    CI->>AWS: apply + migraciones
-  else main
-    CI->>GH: solicita aprobación del environment prod
-    GH-->>CI: aprobación manual
-    CI->>AWS: apply + migraciones
-  end
-  CI-->>Dev: resultado, SBOM y artefactos
+    H -->|develop| I["Entorno DEV"]
+    I --> J["Terraform Apply"]
+    J --> K["Migraciones"]
+
+    H -->|main| L["Aprobación manual"]
+    L --> M["Entorno PROD"]
+    M --> N["Terraform Apply"]
+    N --> O["Migraciones"]
+
+    K --> P["Evidencias · SBOM · resultado"]
+    O --> P
+
+    classDef source fill:#172B4D,stroke:#5276A7,color:#F4F7FB
+    classDef process fill:#1D3557,stroke:#5276A7,color:#F4F7FB
+    classDef security fill:#243B53,stroke:#6B8EAE,color:#F4F7FB
+    classDef deploy fill:#183A37,stroke:#4C8C78,color:#F4F7FB
+    classDef approval fill:#493A22,stroke:#B08A45,color:#FFF8E8
+    class A,B source
+    class C,D,G process
+    class E,F security
+    class I,J,K,M,N,O,P deploy
+    class H,L approval
 ```
 
 | Rama | Workflow | Entorno | Comportamiento |
