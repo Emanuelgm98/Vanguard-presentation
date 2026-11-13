@@ -97,39 +97,16 @@ Detalle completo en [`docs/ARCHITECTURE.md`](https://github.com/Emanuelgm98/aura
 
 ## Flujo GitOps
 
-```mermaid
-flowchart TD
-    A["Desarrollador"] --> B["GitHub · push / pull request"]
-    B --> C["GitHub Actions"]
-    C --> D["Quality · Tests · Build"]
-    D --> E["Checkov · Trivy · Gitleaks"]
-    E --> F["OIDC · credenciales temporales"]
-    F --> G["Terraform Plan · State Lock + KMS"]
-    G --> H{"¿Rama?"}
+<p align="center">
+  <img
+    src="./gitops-flow.svg"
+    alt="Flujo GitOps de Vanguard: GitHub, CI, escaneos de seguridad, OIDC, Terraform Plan, despliegues DEV y PROD protegidos y evidencias de auditoría"
+    width="720"
+    style="display:block;width:100%;max-width:720px;height:auto;margin:0 auto;"
+  >
+</p>
 
-    H -->|develop| I["Entorno DEV"]
-    I --> J["Terraform Apply"]
-    J --> K["Migraciones"]
-
-    H -->|main| L["Aprobación manual"]
-    L --> M["Entorno PROD"]
-    M --> N["Terraform Apply"]
-    N --> O["Migraciones"]
-
-    K --> P["Evidencias · SBOM · resultado"]
-    O --> P
-
-    classDef source fill:#172B4D,stroke:#5276A7,color:#F4F7FB
-    classDef process fill:#1D3557,stroke:#5276A7,color:#F4F7FB
-    classDef security fill:#243B53,stroke:#6B8EAE,color:#F4F7FB
-    classDef deploy fill:#183A37,stroke:#4C8C78,color:#F4F7FB
-    classDef approval fill:#493A22,stroke:#B08A45,color:#FFF8E8
-    class A,B source
-    class C,D,G process
-    class E,F security
-    class I,J,K,M,N,O,P deploy
-    class H,L approval
-```
+<sub>El flujo se presenta en formato vertical para conservar legibilidad en GitHub móvil y escritorio. `develop` despliega DEV; `main` exige aprobación manual para PROD.</sub>
 
 | Rama | Workflow | Entorno | Comportamiento |
 | --- | --- | --- | --- |
