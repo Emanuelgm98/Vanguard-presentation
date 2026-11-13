@@ -7,15 +7,15 @@
   <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#071426" flood-opacity=".22"/></filter>
   <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6F9BC7"/></marker>
   <style>
-    text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#E8EDF2}
-    .brand{font-size:29px;font-weight:750;letter-spacing:2.4px}
-    .subtitle{font-size:17px;fill:#91A1B3;letter-spacing:.5px}
+    text{font-family:"Aptos","Segoe UI",Arial,sans-serif;fill:#E8EDF2;font-kerning:normal}
+    .brand{font-size:28px;font-weight:700;letter-spacing:2.8px}
+    .subtitle{font-size:15px;font-weight:600;fill:#91A1B3;letter-spacing:1.15px}
     .section{fill:#183451;stroke:#365779;stroke-width:1.5}
-    .section-title{font-size:18px;font-weight:700;letter-spacing:1.25px;fill:#AFC8E2}
+    .section-title{font-size:17px;font-weight:700;letter-spacing:1.45px;fill:#AFC8E2}
     .node{fill:#24496B;stroke:#52779A;stroke-width:1.5}
     .primary{fill:#24496B;stroke:#7FA8D0;stroke-width:2}
-    .label{font-size:22px;font-weight:700;fill:#F0F3F6}
-    .sub{font-size:16px;fill:#AAB8C7}
+    .label{font-size:21px;font-weight:650;fill:#F0F3F6}
+    .sub{font-size:15px;font-weight:500;fill:#AAB8C7}
     .arrow{fill:none;stroke:#7FA8D0;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:1}
     .note{font-size:15px;fill:#91A1B3}
     .number{font-size:13px;font-weight:800;fill:#101C2B}
