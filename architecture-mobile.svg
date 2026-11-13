@@ -2,33 +2,33 @@
 <title id="title">VANGUARD Private Operations — AWS Architecture</title>
 <desc id="desc">Enterprise architecture diagram showing web delivery, identity, application APIs, data services, and operations on AWS.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1422"/><stop offset="1" stop-color="#101E2E"/></linearGradient>
-  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B89558"/><stop offset="1" stop-color="#D9C08B"/></linearGradient>
-  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#020811" flood-opacity=".32"/></filter>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#C5A66A"/></marker>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10243B"/><stop offset="1" stop-color="#10243B"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5D91C5"/><stop offset="1" stop-color="#5D91C5"/></linearGradient>
+  <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#071426" flood-opacity=".22"/></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6F9BC7"/></marker>
   <style>
     text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#E8EDF2}
     .brand{font-size:29px;font-weight:750;letter-spacing:2.4px}
     .subtitle{font-size:17px;fill:#91A1B3;letter-spacing:.5px}
-    .section{fill:#111F30;stroke:#2B4056;stroke-width:1.5}
-    .section-title{font-size:18px;font-weight:700;letter-spacing:1.25px;fill:#D8C18E}
-    .node{fill:#1A2D42;stroke:#3A5068;stroke-width:1.5}
-    .primary{fill:#1A2D42;stroke:#C5A66A;stroke-width:2}
+    .section{fill:#183451;stroke:#365779;stroke-width:1.5}
+    .section-title{font-size:18px;font-weight:700;letter-spacing:1.25px;fill:#AFC8E2}
+    .node{fill:#24496B;stroke:#52779A;stroke-width:1.5}
+    .primary{fill:#24496B;stroke:#7FA8D0;stroke-width:2}
     .label{font-size:22px;font-weight:700;fill:#F0F3F6}
     .sub{font-size:16px;fill:#AAB8C7}
-    .arrow{fill:none;stroke:#C5A66A;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:.9}
+    .arrow{fill:none;stroke:#7FA8D0;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;opacity:1}
     .note{font-size:15px;fill:#91A1B3}
     .number{font-size:13px;font-weight:800;fill:#101C2B}
   </style>
 </defs>
 <rect width="900" height="1420" rx="28" fill="url(#bg)"/>
-<rect x="48" y="34" width="54" height="3" rx="2" fill="url(#gold)"/>
+<rect x="48" y="34" width="54" height="3" rx="2" fill="#6F9BC7"/>
 <text x="450" y="61" text-anchor="middle" class="brand">VANGUARD PRIVATE OPERATIONS</text>
 <text x="450" y="91" text-anchor="middle" class="subtitle">AWS CLOUD ARCHITECTURE  /  SECURITY BY DESIGN</text>
 
 <!-- 01 Edge -->
 <rect x="48" y="116" width="804" height="234" rx="18" class="section"/>
-<circle cx="78" cy="151" r="13" fill="url(#gold)"/><text x="78" y="156" text-anchor="middle" class="number">01</text>
+<circle cx="78" cy="151" r="13" fill="#6F9BC7"/><text x="78" y="156" text-anchor="middle" class="number">01</text>
 <text x="102" y="157" class="section-title">EDGE &amp; WEB DELIVERY</text>
 <rect x="78" y="184" width="205" height="106" rx="12" class="node" filter="url(#shadow)"/>
 <text x="180" y="226" text-anchor="middle" class="label">Operator</text><text x="180" y="255" text-anchor="middle" class="sub">HTTPS</text>
@@ -42,7 +42,7 @@
 <path d="M450 350 V389" class="arrow" marker-end="url(#arrow)"/>
 <!-- 02 Identity -->
 <rect x="48" y="398" width="804" height="150" rx="18" class="section"/>
-<circle cx="78" cy="433" r="13" fill="url(#gold)"/><text x="78" y="438" text-anchor="middle" class="number">02</text>
+<circle cx="78" cy="433" r="13" fill="#6F9BC7"/><text x="78" y="438" text-anchor="middle" class="number">02</text>
 <text x="102" y="439" class="section-title">IDENTITY &amp; ACCESS</text>
 <rect x="200" y="460" width="500" height="65" rx="12" class="primary" filter="url(#shadow)"/>
 <text x="450" y="487" text-anchor="middle" class="label">Amazon Cognito User Pool</text>
@@ -51,7 +51,7 @@
 <path d="M450 548 V587" class="arrow" marker-end="url(#arrow)"/>
 <!-- 03 Application -->
 <rect x="48" y="596" width="804" height="212" rx="18" class="section"/>
-<circle cx="78" cy="631" r="13" fill="url(#gold)"/><text x="78" y="636" text-anchor="middle" class="number">03</text>
+<circle cx="78" cy="631" r="13" fill="#6F9BC7"/><text x="78" y="636" text-anchor="middle" class="number">03</text>
 <text x="102" y="637" class="section-title">APPLICATION &amp; API LAYER</text>
 <rect x="90" y="660" width="320" height="108" rx="12" class="primary" filter="url(#shadow)"/>
 <text x="250" y="703" text-anchor="middle" class="label">API Gateway</text><text x="250" y="733" text-anchor="middle" class="sub">HTTP API · JWT authorizer</text>
@@ -63,7 +63,7 @@
 <path d="M450 808 V847" class="arrow" marker-end="url(#arrow)"/>
 <!-- 04 Data -->
 <rect x="48" y="856" width="804" height="214" rx="18" class="section"/>
-<circle cx="78" cy="891" r="13" fill="url(#gold)"/><text x="78" y="896" text-anchor="middle" class="number">04</text>
+<circle cx="78" cy="891" r="13" fill="#6F9BC7"/><text x="78" y="896" text-anchor="middle" class="number">04</text>
 <text x="102" y="897" class="section-title">DATA &amp; SECRETS</text>
 <rect x="78" y="920" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
 <text x="190" y="962" text-anchor="middle" class="label">RDS PostgreSQL</text><text x="190" y="991" text-anchor="middle" class="sub">NUMERIC(18,6)</text>
@@ -75,7 +75,7 @@
 <path d="M450 1070 V1109" class="arrow" marker-end="url(#arrow)"/>
 <!-- 05 Operations -->
 <rect x="48" y="1118" width="804" height="252" rx="18" class="section"/>
-<circle cx="78" cy="1153" r="13" fill="url(#gold)"/><text x="78" y="1158" text-anchor="middle" class="number">05</text>
+<circle cx="78" cy="1153" r="13" fill="#6F9BC7"/><text x="78" y="1158" text-anchor="middle" class="number">05</text>
 <text x="102" y="1159" class="section-title">OPERATIONS &amp; OBSERVABILITY</text>
 <rect x="78" y="1182" width="224" height="110" rx="12" class="node" filter="url(#shadow)"/>
 <text x="190" y="1224" text-anchor="middle" class="label">CloudWatch</text><text x="190" y="1253" text-anchor="middle" class="sub">Logs · metrics · alarms</text>
