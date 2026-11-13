@@ -30,6 +30,8 @@
   <img alt="Backend tests 47/47" src="https://img.shields.io/badge/Backend%20tests-47%2F47-2ea44f">
   <img alt="Checkov 338/338" src="https://img.shields.io/badge/Checkov-338%2F338-2ea44f">
   <img alt="License proprietary" src="https://img.shields.io/badge/License-proprietary-2ea44f">
+    
+    
 </p>
 
 
