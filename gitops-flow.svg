@@ -9,11 +9,12 @@
   <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000814" flood-opacity=".28"/></filter>
   <marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#7894B5" stroke-width="1.5"/></marker>
   <style>
-    .h{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#F1F5FA;letter-spacing:1.5px}
-    .sub{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#8FA7C2;letter-spacing:2px}
-    .t{font:650 20px Inter,Segoe UI,Arial,sans-serif;fill:#F2F6FC}
-    .d{font:450 14px Inter,Segoe UI,Arial,sans-serif;fill:#B7C6D8}
-    .tag{font:700 11px Inter,Segoe UI,Arial,sans-serif;fill:#A9C4E2;letter-spacing:1.5px}
+    text{ text-rendering:geometricPrecision; }
+    .h{font:700 29px Inter,Segoe UI,Arial,sans-serif;fill:#F1F5FA;letter-spacing:1.5px}
+    .sub{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#8FA7C2;letter-spacing:2px}
+    .t{font:650 24px Inter,Segoe UI,Arial,sans-serif;fill:#F2F6FC}
+    .d{font:500 17px Inter,Segoe UI,Arial,sans-serif;fill:#B7C6D8}
+    .tag{font:700 13px Inter,Segoe UI,Arial,sans-serif;fill:#A9C4E2;letter-spacing:1.5px}
     .line{fill:none;stroke:#7894B5;stroke-width:2.2;marker-end:url(#arrow)}
   </style>
 </defs>
