@@ -32,9 +32,7 @@
   <img alt="License proprietary" src="https://img.shields.io/badge/License-proprietary-2ea44f">
 </p>
 
-<p align="center">
-  <img src="./branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel G.Michea" width="160">
-</p>
+
 
 > **Estado:** scaffold GitOps completo, validado localmente y listo para bootstrap.
 > **No se ha creado ningún recurso en AWS.** Cualquier `apply` requiere autorización
