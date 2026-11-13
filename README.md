@@ -10,7 +10,7 @@
 <div align="center">
   <img src="./branding/griffin-emblem.png" alt="Griffin - sello GRIFFIN CLI" width="72">
   <br>
-  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel G. Michea</strong></sub>
+  <sub><strong>GRIFFIN CLI</strong> · Sello de <strong>Emanuel G.Michea</strong></sub>
 </div>
 
 <h1 align="center">VANGUARD PRIVATE OPERATIONS</h1>
@@ -33,7 +33,7 @@
 </p>
 
 <p align="center">
-  <img src="./branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel Gonzalez Michea" width="160">
+  <img src="./branding/griffin-verified.png" alt="GRIFFIN VERIFIED — Emanuel G.Michea" width="160">
 </p>
 
 > **Estado:** scaffold GitOps completo, validado localmente y listo para bootstrap.
@@ -238,7 +238,7 @@ terraform -chdir=infrastructure/terraform/environments/dev validate
 
 | Rol | Responsable |
 | --- | --- |
-| Autor, operador y auditor | **Emanuel Gonzalez Michea** |
+| Autor, operador y auditor | **Emanuel G.Michea** |
 | Sello | **GRIFFIN CLI** |
 | Repositorio | `Emanuelgm98/aura-private-operations` |
 | Trazabilidad | Git, PR, CloudTrail, CloudWatch y ledger append-only |
@@ -246,7 +246,7 @@ terraform -chdir=infrastructure/terraform/environments/dev validate
 
 Cada cambio queda registrado en Git y debe superar validación, pruebas y escaneos de
 seguridad antes de llegar a `main`. La auditoría técnica, la revisión de infraestructura y
-la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**.
+la aprobación de producción son responsabilidad de **Emanuel G.Michea**.
 
 ## Documentación
 
@@ -265,12 +265,12 @@ la aprobación de producción son responsabilidad de **Emanuel Gonzalez Michea**
   <img src="./branding/griffin-emblem.png" alt="Griffin - GRIFFIN CLI" width="52">
   <br>
   <sub><strong>GRIFFIN CLI</strong> · <em>Diseñado para operar, no para improvisar.</em></sub><br>
-  <sub>Emanuel Gonzalez Michea · Autor y auditor</sub>
+  <sub>Emanuel G.Michea · Autor y auditor</sub>
 </div>
 
 <br>
 
 <div align="center">
   <sub>Propiedad de Vanguard. Uso interno. Sin licencia de redistribución.</sub><br>
-  <sub>© VANGUARD PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G. Michea</sub>
+  <sub>© VANGUARD PRIVATE OPERATIONS · GRIFFIN CLI · Emanuel G.Michea</sub>
 </div>
