@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1450" viewBox="0 0 720 1450" role="img" aria-labelledby="title desc">
+<title id="title">Vanguard GitOps delivery workflow</title>
+<desc id="desc">Secure GitOps workflow from GitHub through CI, security scanning, OIDC, Terraform plan, protected DEV and PROD deployments, migrations and evidence.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1424"/><stop offset="1" stop-color="#101F35"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#183B63"/><stop offset="1" stop-color="#204D78"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#173D3B"/><stop offset="1" stop-color="#20534C"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#493A24"/><stop offset="1" stop-color="#5A4729"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#000814" flood-opacity=".28"/></filter>
+  <marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#7894B5" stroke-width="1.5"/></marker>
+  <style>
+    .h{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#F1F5FA;letter-spacing:1.5px}
+    .sub{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#8FA7C2;letter-spacing:2px}
+    .t{font:650 20px Inter,Segoe UI,Arial,sans-serif;fill:#F2F6FC}
+    .d{font:450 14px Inter,Segoe UI,Arial,sans-serif;fill:#B7C6D8}
+    .tag{font:700 11px Inter,Segoe UI,Arial,sans-serif;fill:#A9C4E2;letter-spacing:1.5px}
+    .line{fill:none;stroke:#7894B5;stroke-width:2.2;marker-end:url(#arrow)}
+  </style>
+</defs>
+<rect width="720" height="1450" rx="26" fill="url(#bg)"/>
+<rect x="1" y="1" width="718" height="1448" rx="25" fill="none" stroke="#263B56"/>
+<text x="48" y="58" class="sub">VANGUARD PRIVATE OPERATIONS</text>
+<text x="48" y="98" class="h">SECURE GITOPS DELIVERY</text>
+<text x="48" y="125" class="d">Auditable infrastructure · OIDC identity · Protected releases</text>
+<path d="M360 170 V195" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="198" width="510" height="92" rx="15" fill="url(#blue)" stroke="#426A91"/>
+<text x="135" y="229" class="tag">01 / SOURCE CONTROL</text><text x="135" y="260" class="t">Developer · GitHub</text><text x="135" y="280" class="d">Push / Pull Request</text></g>
+<path d="M360 290 V326" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="329" width="510" height="92" rx="15" fill="url(#blue)" stroke="#426A91"/>
+<text x="135" y="360" class="tag">02 / CONTINUOUS INTEGRATION</text><text x="135" y="391" class="t">GitHub Actions</text><text x="135" y="411" class="d">Quality gates · Tests · Build</text></g>
+<path d="M360 421 V457" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="460" width="510" height="92" rx="15" fill="#202F46" stroke="#59718F"/>
+<text x="135" y="491" class="tag">03 / SECURITY VALIDATION</text><text x="135" y="522" class="t">Checkov · Trivy · Gitleaks</text><text x="135" y="542" class="d">Infrastructure and supply-chain scans</text></g>
+<path d="M360 552 V588" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="591" width="510" height="92" rx="15" fill="#24384D" stroke="#6686A6"/>
+<text x="135" y="622" class="tag">04 / FEDERATED IDENTITY</text><text x="135" y="653" class="t">GitHub OIDC</text><text x="135" y="673" class="d">Temporary AWS credentials · No static keys</text></g>
+<path d="M360 683 V719" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="722" width="510" height="92" rx="15" fill="url(#blue)" stroke="#426A91"/>
+<text x="135" y="753" class="tag">05 / INFRASTRUCTURE PLAN</text><text x="135" y="784" class="t">Terraform Plan</text><text x="135" y="804" class="d">Remote state · Locking · KMS encryption</text></g>
+<path d="M360 814 V850" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="853" width="510" height="82" rx="15" fill="url(#gold)" stroke="#9B7A43"/>
+<text x="135" y="884" class="tag" style="fill:#E7C98E">06 / RELEASE POLICY</text><text x="135" y="915" class="t">Branch-based deployment control</text></g>
+<path d="M360 935 V962 H220 V987" fill="none" stroke="#6EAA98" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M360 962 H500 V1110" fill="none" stroke="#C1A16A" stroke-width="2.2" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)"><rect x="48" y="990" width="344" height="150" rx="15" fill="url(#green)" stroke="#4E8B7D"/>
+<text x="75" y="1023" class="tag" style="fill:#9ED4C5">DEVELOPMENT / DEV</text><text x="75" y="1060" class="t">develop</text><text x="75" y="1088" class="d">Terraform Apply</text><text x="75" y="1112" class="d">Database migrations</text></g>
+<g filter="url(#shadow)"><rect x="328" y="1113" width="344" height="150" rx="15" fill="url(#gold)" stroke="#A88B57"/>
+<text x="355" y="1146" class="tag" style="fill:#E7C98E">PRODUCTION / PROD</text><text x="355" y="1183" class="t">main</text><text x="355" y="1211" class="d">Manual approval → Apply</text><text x="355" y="1235" class="d">Database migrations</text></g>
+<path d="M220 1140 V1290 H360 V1310" fill="none" stroke="#7894B5" stroke-width="2.2"/>
+<path d="M500 1263 V1290 H360" fill="none" stroke="#7894B5" stroke-width="2.2"/>
+<path d="M360 1290 V1310" class="line"/>
+<g filter="url(#shadow)"><rect x="105" y="1313" width="510" height="92" rx="15" fill="#1C344B" stroke="#547A9D"/>
+<text x="135" y="1344" class="tag">07 / AUDIT &amp; TRACEABILITY</text><text x="135" y="1375" class="t">Evidence · SBOM · Deployment result</text><text x="135" y="1395" class="d">Git history · Workflow logs · Security artifacts</text></g>
+</svg>
